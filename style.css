@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+
+}
+@font-face {
+    font-family: Mont;
+    src: url(Assets/Montserrat-VariableFont_wght.ttf);
+}
+
+a {
+    text-decoration: none;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+html {
+    scroll-behavior: smooth;
+}
+.item {
+    font: 500 1.875rem 'Mont', sans-seriff;
+    color: #678471;
+}
+.item:hover {
+    color: #ffa36a;
+    transition: 0.3s;
+    font: 500 30px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* THE DIVISON 2 */
+.divisao {
+    height: 1px;
+    background-color:#47564c;
+    margin: 23px 0;
+}
+/* NOSSA FOOD */
+.nossaComida {
+    width: 600px;
+    height: auto;
+}
+
+.container {
+    display: flex;
+    margin: 0 80px;
+
+}
+.titulo {
+    font: 700 33px 'Mont', Sans-Serif;
+    color: #47564c;
+}
+
+    .texto {
+        font: 300 20px 'Mont', sans-serif;
+        color: black;
+        text-align: justify;
+    }
+
+    .conteudo {
+        margin: 60px 0 0 40px;
+
+    }
+    /* NOSSA EQUIPE */
+    .comida {
+        width: 150px;
+    }
+    .comida:hover {
+        width: 200px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .panelas {
+        width: 1300px;
+        height: auto;
+        border-radius: 8px;
+        margin-left: 30px;
+    }
+.pratos {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.prato {
+    border: 2px solid black;
+    width: 400px;
+    margin: 20px;
+    border-radius: 5px;
+    padding: 8px 11px;
+
+}
+.cardapio-conteudo {
+    display: flex;
+    flex-direction: column;
+}
+.cardapio {
+    margin: 0 80px;
+}
+.nome, .preco {
+    font: 700 18px 'mont', sans-serif;
+}
+.descricao {
+    font: 400 15px 'mont', sans-serif;
+    text-align: justify;
+}
+/* RODAPÉ */
+#contato {
+    background-color: #678471;
+    padding: 30px;
+}
+#contato .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.icone {
+    width:  40px;
+    padding: 8px;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin-right: 80px;
+}
+.name .amm {
+    font: 500 35px 'Mont', sans-serif;
+    color: #fff;
+}
+.name .cs {
+    font: 700 20px 'Mont', sans-serif;
+    color: #ffa36a;
+}
+.redes{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+.rede {
+    display: flex;
+    text-align: center;
+}
+.endereco-titulo {
+    font: 500 40px 'Mont', sans-serif;
+    color: #fff;
+}
+.endereco-nome {
+    font: 300 18px 'Mont', sans-serif;
+    color: #fff;
+    text-align: justify;
+}
+.rede-nome {
+    font: 300 18px 'Mount', sans-serif;
+    color: #fff;
+}
