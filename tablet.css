@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+a{
+    text-decoration: none;
+}
+    @media screen and (max-width: 768px) {
+    .container{
+        margin: 0;
+        border: 0;
+        padding: 0;
+        display: block;
+    }
+
+}
+.nossa-comida, .panela{
+    width: 90vw;
+    height: auto;
+}
+.titulo{
+    font: 400 25px 'mont', sans-serif;
+    margin-bottom: 10px;
+}
+.texto{
+    font: 300 13px 'mont', sans-serif;
+}
+.item{
+    font: 400 15px 'mont', sans-serif;
+    padding: 0 3px;
+    margin-left: 16px
+}
+.item:hover{
+    font: 400 20px 'Mont', sans-serif;
+}
+.panelas, .img {
+   margin-top: 30px;
+   margin-bottom: 100px;
+}
+.texto{
+    font: 400 15px 'Mont', sans-serif;
+    margin-right: 20px;
+    
+}
+.imagem {
+    text-align: center;
+}
+.cardapio, .titulo {
+    font: 400 20px 'Mont', sans-serif;
+    text-align: center;
+}

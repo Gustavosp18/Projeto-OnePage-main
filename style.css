@@ -1,163 +1,248 @@
-* {
+*{
     margin: 0;
     padding: 0;
-    border: 0;
     box-sizing: border-box;
-
+    border: 0;
 }
-@font-face {
-    font-family: Mont;
-    src: url(Assets/Montserrat-VariableFont_wght.ttf);
-}
-
-a {
+a{
     text-decoration: none;
 }
-img {
+img{
     width: 100%;
     height: auto;
 }
-html {
+.logo{
+    width: 17rem;
+}
+html{
     scroll-behavior: smooth;
 }
-.item {
-    font: 500 1.875rem 'Mont', sans-seriff;
+@font-face{
+    font-family: 'mont';
+    src: url(Assets/Montserrat-VariableFont_wght.ttf);
+}
+.item{
+    font: 500 1.7rem 'mont', sans-serif;
     color: #678471;
 }
-.item:hover {
+.item:hover{
     color: #ffa36a;
-    transition: 0.3s;
-    font: 500 30px;
 }
-
-.menu {
+.menu{
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-
-/* THE DIVISON 2 */
-.divisao {
-    height: 1px;
-    background-color:#47564c;
-    margin: 23px 0;
+#header{
+    margin: 0 30px;
 }
-/* NOSSA FOOD */
-.nossaComida {
-    width: 600px;
-    height: auto;
+.divisao{
+    height: .0625rem;
+    background-color: #47564c;
+    width: 100vw;
+    margin: 20px 0;
 }
-
-.container {
-    display: flex;
-    margin: 0 80px;
-
+.nossa-comida{
+    width: 500px;
+    border-radius: 8px;
 }
-.titulo {
-    font: 700 33px 'Mont', Sans-Serif;
+.container{
+display: flex;
+margin: 0 80px;
+}
+.titulo{
+    font: 500 2.0625rem 'mont', sans-serif;
     color: #47564c;
+    margin-bottom: 30px;
 }
-
-    .texto {
-        font: 300 20px 'Mont', sans-serif;
-        color: black;
-        text-align: justify;
-    }
-
-    .conteudo {
-        margin: 60px 0 0 40px;
-
-    }
-    /* NOSSA EQUIPE */
-    .comida {
-        width: 150px;
-    }
-    .comida:hover {
-        width: 200px;
-        cursor: pointer;
-        transition: 0.3s;
-    }
-    .panelas {
-        width: 1300px;
-        height: auto;
-        border-radius: 8px;
-        margin-left: 30px;
-    }
-.pratos {
+.texto{
+    font: 300 20px 'mont', sans-serif;
+    color: black;
+    text-align: justify;
+} 
+.conteudo{
+    margin: 60px 0 0 40px;
+} 
+.panela{
+    width: 37.5rem;
+    border-radius: 8px;
+    margin-left: 30px;
+}
+.comida{
+    width: 150px;
+}
+.comida:hover{
+    width: 200px;
+    transition: 0.3s;
+}
+.pratos{
     display: flex;
     justify-content: space-around;
     text-align: center;
     flex-wrap: wrap;
 }
-.prato {
+.prato{
     border: 2px solid black;
     width: 400px;
     margin: 20px;
     border-radius: 5px;
     padding: 8px 11px;
-
 }
-.cardapio-conteudo {
+.cardapio-conteudo{
     display: flex;
     flex-direction: column;
 }
-.cardapio {
+.cardapio{
     margin: 0 80px;
 }
-.nome, .preco {
+.nome, .preco{
     font: 700 18px 'mont', sans-serif;
 }
-.descricao {
+.descricao{
     font: 400 15px 'mont', sans-serif;
-    text-align: justify;
+    text-align: center
 }
-/* RODAPÉ */
-#contato {
+#contato{
     background-color: #678471;
     padding: 30px;
 }
-#contato .container{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.icone {
-    width:  40px;
-    padding: 8px;
+.icone{
+    width: 30px;
+    padding: 5px;
 }
 .name{
     display: flex;
     flex-direction: column;
-    width: 600px;
-    margin-right: 80px;
+    margin-right: 20px;
 }
-.name .amm {
-    font: 500 35px 'Mont', sans-serif;
-    color: #fff;
+.name .amm{
+    font: 500 40px 'mont', sans-serif;
+    color: white;
+
 }
-.name .cs {
-    font: 700 20px 'Mont', sans-serif;
+.rede-nome, .cs, .endereco{
+    color: white;
+    font: 400 20px 'mont', sans-serif;
+}
+
+.cs{
     color: #ffa36a;
 }
 .redes{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     width: 600px;
+    justify-content: center;
 }
-.rede {
-    display: flex;
-    text-align: center;
-}
-.endereco-titulo {
-    font: 500 40px 'Mont', sans-serif;
-    color: #fff;
-}
-.endereco-nome {
-    font: 300 18px 'Mont', sans-serif;
-    color: #fff;
+.endereco-nome{
+    font: 300 18px 'mont';
     text-align: justify;
 }
-.rede-nome {
-    font: 300 18px 'Mount', sans-serif;
-    color: #fff;
+#contato, .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+@media screen and (max-width: 400px){
+        .container{
+            margin: 0;
+            border: 0;
+            padding: 0;
+            display: block;
+        }
+        .nossa-comida, .panela{
+            width: 90vw;
+            height: auto;
+            margin: 0;
+        }
+        .imagem{
+            text-align: center;
+        }
+        .titulo{
+            font: 500 23px 'mont', sans-serif;
+            margin: 15px 0;
+        }
+        .menu{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .item{
+            font: 400 18px 'mont', sans-serif;
+            width: 100vw;
+            text-align: center;
+            margin: 5px 0;
+        }
+        .texto{
+            font: 300 15px 'mont', sans-serif;
+        }
+        .logo{
+            width: 70vw;
+            height: auto;
+        }
+        .conteudo{
+            margin: 0 20px;
+            border: 0;
+            padding: 0;
+        }
+        .prato{
+            width: 90vw;
+            margin: 10px 0;
+        }
+        .cardapio{
+            margin: 0 20px;
+        }
+        #nossa-equipe .container{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .section{
+            margin: 20px 0 0 ;
+        }
+        #contato{
+            margin: 0;
+            padding: 0;
+            border: 0;
+            width: 100vw;
+        }
+        body{
+            background-color: white;
+        }
+        #contato .container{
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+        }
+        .name{
+            width: 90vw;
+            text-align: center;
+            margin: 0;
+        }
+        .name .amm{
+            font: 500 30px 'mont', sans-serif;
+            width: 90vw;
+        }
+        .redes{
+            margin: 20px 0;
+            display: block;
+            width: 90vw;
+        }
+        .rede{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            width: 90vw;
+            margin: 10px 0;
+        }
+        .endereco{
+            width: 90vw;
+            margin-bottom: 25px;
+        }
 }
